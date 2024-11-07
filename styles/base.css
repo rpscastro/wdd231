@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Noto+Serif:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+
+    background: #B6B6BD;
+    color: black;
+
+
+
+}
+
+
+body {
+    font-family: 'Lato', Helvetica, sans-serif;
+
+}
+
+/* Mobile View ***************/
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background-color: #B6B6BD;
+    color: black;
+    margin-right: 30px;
+}
+
+#menu:hover {
+
+    background-color: black;
+    color: white;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+nav {
+    background-color: black;
+}
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover,
+navigation a:active {
+    color: black;
+    background-color: #B6B6BD;
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+#rafael-castro-img {
+
+    width: 10%;
+    height: auto;
+    margin-right: 20px;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px #333;
+
+}
+
+#sao-paulo-mobile {
+
+    width: 50%;
+    height: auto;
+    margin: auto;
+    box-shadow: 0 0 10px #333;
+
+}
+
+
+header div h1 {
+
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+
+
+}
+
+header div {
+
+    display: flex;
+    align-items: center;
+
+
+}
+
+section div {
+
+    color: white;
+    background-color: #DF061D;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 20px;
+
+
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 40px;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#course-filter {
+
+    background: white;
+    display: flex;
+    padding: 5px;
+    justify-content: space-around;
+    font-family: 'Lato', Helvetica, sans-serif;
+    box-shadow: 0 0 10px #333;
+}
+
+#course-filter div {
+    display: block;
+    flex: 1 1 100%;
+    margin: 5px;
+    text-align: center;
+    background: black;
+    color: white;
+    text-decoration: none;
+}
+
+#course-filter div:hover {
+
+    background-color: #B6B6BD;
+    color: black;
+
+}
+
+#credits {
+
+    text-align: center;   
+
+}
+#courseList {
+
+    background-color: white;
+
+
+
+}
+
+.course-completed {
+
+    color: white;
+    background-color: #DF061D;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px #333;
+
+}
+
+.course-uncompleted {
+
+    color: black;
+    background-color: #ceced1;
+    ;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px #333;
+
+}
+
+#brazil-flag {
+    width: 40px;
+    height: auto;
+    margin-left: 5px;
+
+}
+
+
+
+footer {
+    background: black;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Lato', Helvetica, sans-serif;
+}

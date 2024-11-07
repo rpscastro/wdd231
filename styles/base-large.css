@@ -1,0 +1,65 @@
+/* Media Query for wider than mobile viewports. Breakpoint should be based upon the design and content and use em units to be relative to the user's font size versus fixed with pixels.*/
+@media only screen and (min-width: 40em) {
+	.navigation {
+		display: flex;
+	}
+
+	.navigation li {
+		display: block;
+		/* change state in small view */
+		flex: 1 1 100%;
+	}
+
+	.navigation a {
+		text-align: center;
+	}
+
+	#menu {
+		display: none;
+	}
+
+
+	#courseList {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(auto, 1fr);
+		gap: 10px;
+	}
+
+	main {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(5, 1fr);
+		gap: 10px;
+		margin: 20px;
+	}
+
+	#courseWork {
+		grid-row: 1 / 4;
+		grid-column: 1 / 3;
+		box-shadow: 0 0 10px #333;
+
+	}
+
+	#country {
+
+		grid-row: 1 / 4;
+		grid-column: 3 / 4;
+		box-shadow: 0 0 10px #333;
+
+	}
+
+	#certificate-content {
+
+		grid-row: 4 / 6;
+		grid-column: 1 / 4;
+		box-shadow: 0 0 10px #333;
+
+	}
+
+	#sao-paulo-mobile {
+
+		margin-top: 40px;
+	}
+
+}
