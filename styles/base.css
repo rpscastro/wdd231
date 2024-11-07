@@ -70,9 +70,14 @@ nav {
 }
 
 .navigation a:hover,
-navigation a:active {
+navigation {
     color: black;
     background-color: #B6B6BD;
+}
+
+.active::before {
+    content: "📍";
+    /* just a wayfinding symbol for the user */
 }
 
 .show li {
@@ -174,9 +179,10 @@ figure {
 
 #credits {
 
-    text-align: center;   
+    text-align: center;
 
 }
+
 #courseList {
 
     background-color: white;
