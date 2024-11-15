@@ -1,0 +1,29 @@
+{
+    "familyName" : "Smith",
+    "dateMoved" : "11/12/2024",
+    "numberOfPeople" : 4,
+    "secretBase" : "Super tower",
+    "vistedByBishopric" : true,
+    "familyMembers" : [
+      {
+        "name" : "John Smith",
+        "gender" : "male",
+        "birhtDate" : "10/04/1984"
+      },
+      {
+        "name" : "Mary Smith",
+        "gender" : "female",
+        "birhtDate" : "09/05/1990"
+      },
+      {      
+        "name" : "Paul Smith",
+        "gender" : "male",
+        "birhtDate" : "10/04/2010"
+      },
+      {      
+        "name" : "Ruth Smith",
+        "gender" : "female",
+        "birhtDate" : "12/10/2020"
+      }
+    ]
+  }
