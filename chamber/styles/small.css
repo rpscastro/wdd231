@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-header, footer {background-color: #bbb; padding: 1rem;}
+header {background-color: #bbb; padding: 1rem;}
 
 header {
     display: grid;
@@ -27,13 +27,14 @@ body {
 
 }
 
-main h2 {
+main h1 {
 
     color: white;
     background-color: #DF061D;
     text-align: center;
     margin-bottom: 10px;
     padding: 20px;
+    margin-top: 0;
 
 
 }
@@ -50,8 +51,8 @@ footer {
 footer .social img {
 
     padding: 5px;
-    height: 64px;
-    width: auto;
+    height: 50px;
+    width: 50px;
     
 }
 
@@ -138,7 +139,10 @@ footer .social{
     color: white;
 }
 
+.card a {
 
+    color: navy;
+}
 
 
 /*NAVIGATION STUFF HERE*/
