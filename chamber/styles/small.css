@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Noto+Serif:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, footer {background-color: #bbb; padding: 1rem;}
+
+header {
+    display: grid;
+    grid-template-columns: 50px auto  44px;
+    align-items: end;
+
+}
+
+header div {
+
+    margin-left: 60px;
+
+
+}
+
+body {
+    font-family: 'Lato', Helvetica, sans-serif;
+
+}
+
+main h2 {
+
+    color: white;
+    background-color: #DF061D;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 20px;
+
+
+}
+
+footer {
+    display: grid;
+    background: black;
+    color: white;
+    padding: 2rem;
+    text-align: left;
+    font-family: 'Lato', Helvetica, sans-serif;
+}
+
+footer .social img {
+
+    padding: 5px;
+    height: 64px;
+    width: auto;
+    
+}
+
+footer div{
+    margin: 10px;
+}
+
+
+footer .social{
+    text-align: center;
+}
+
+
+.card {
+
+    color: black;
+    background-color: #B6B6BD;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px #333;
+
+}
+
+.card h3 {
+
+    margin: 10px;
+}
+
+.label {
+
+    font-weight: bold;
+}
+
+
+.list .card {
+
+    display: grid;
+	/* grid-template-columns: 2fr 1fr 1fr; */
+	/* margin: 0;
+	padding: 0.25rem; */
+}
+
+.list .card:nth-child(even) {
+	background-color: white;
+}
+
+
+.list .card > * {
+	margin: 0 1rem;
+}
+
+.list .card picture {
+	display: none; /* smaller viewports only */
+}
+
+
+
+ .menu {
+
+  
+    justify-content: space-around;
+    font-family: 'Lato', Helvetica, sans-serif;
+    text-align: center;
+
+} 
+
+.menu button {
+    /* display: block; */
+    flex: 1 1 100%;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    width: 75px;
+    height: 35px;
+    font-weight: bold;
+    box-shadow: 0 0 5px #333;
+}
+
+.menu button:hover {
+
+
+    background: black;
+    color: white;
+}
+
+
+
+
+/*NAVIGATION STUFF HERE*/
+nav {
+
+    background-color: black;
+}
+
+#myButton::before {
+
+    content: "\2630";
+}
+
+#myButton {
+
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    padding: .25rem 2vw;
+    
+}
+
+ul.menuLinks li a {
+
+    display: block;
+    padding: .75rem 2vw;
+    color: #fff;
+    text-decoration: none;
+}
+
+li.current-menu-item a::before {
+
+    content: "📍";
+}
+
+ul.menuLinks {
+
+    list-style-type: none;
+}
+
+
+/* CSS for the open class */
+#myButton.open::before {
+    content: "x"
+}
+
+nav {
+
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+nav ul {overflow: hidden;}
+
+nav.open {
+    grid-template-rows: 1fr;
+}
+
+#animateme a:hover {
+
+    color: black;
+    background-color: #B6B6BD;
+}

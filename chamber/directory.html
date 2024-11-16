@@ -1,96 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <link rel="icon" href="favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vila Calu Chamber of Commerce - Directory</title>
-    <meta name="description" content="WDD 231 - Web Frontend Development I - Rafael Castro
-    Vila Calu Chamber of Commerce - Directory"/>
+    <meta
+      name="description"
+      content="WDD 231 - Web Frontend Development I - Rafael Castro
+    Vila Calu Chamber of Commerce - Directory"
+    />
     <meta name="author" content="Rafael Castro" />
-    <meta property="og:title" content="Vila Calu Chamber of Commerce - Directory"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:image" content="https://rpscastro.github.io/wdd231/chamber/images/igreja-santa-luzia.webp"/>
-    <meta property="og:url" content="https://rpscastro.github.io/wdd231/chamber/directory.html"/>
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/base-large.css">
+    <meta
+      property="og:title"
+      content="Vila Calu Chamber of Commerce - Directory"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://rpscastro.github.io/wdd231/chamber/images/igreja-santa-luzia.webp"
+    />
+    <meta
+      property="og:url"
+      content="https://rpscastro.github.io/wdd231/chamber/directory.html"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/large.css" />
     <script src="scripts/getdates.js" defer></script>
-    <script src="scripts/mobile-menu.js" defer></script>
-</head>
+    <script src="scripts/scripts.js" defer></script>
+  </head>
 
-<body>
-    <header>
-
+  <body>
+    <div id="content">
+      <header>
+        <img src="images/logo.PNG" width="100" height="81" />
         <div>
-            <img id="rafael-castro-img" src="images/rafael_castro.jpg" alt="Rafael Castro Photo">
-            <h1>Rafael Castro</h1>
-            <a id="menu" href="#"></a>
+          <h2>Vila Calu</h2>
+          <h3>Chamber of Commerce</h3>
         </div>
+        <button id="myButton"></button>
+      </header>
+      <nav id="animateme">
+        <ul class="menuLinks">
+          <li><a href="index.html" title="Home">Home</a></li>
+          <li class="current-menu-item">
+            <a href="directory.html" title="Directory">Directory</a>
+          </li>
+          <li><a href="join.html" title="Join">Join</a></li>
+          <li><a href="discover.html" title="Discover">Discover</a></li>
+        </ul>
+      </nav>
 
-        <nav>
-            <ul class="navigation">
-                <li><a href="index.html" title="Home" class="active">Home</a></li>
-                <li><a href="" title="Chamber">Chamber</a></li>
-                <li><a href="https://github.com/rpscastro" title="GitHub Profile">GitHub Profile</a></li>
-                <li><a href="https://www.linkedin.com/in/rafaelpscastro/" title="LinkedIn">LinkedIn</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="card" id="courseWork">
-            <div>
-                <h2>Course Work</h2>
-            </div>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+      <main>
+        <h2>Directory</h2>
 
+        <div class="menu">
+          <button id="grid">Grid</button>
+          <button id="list">List</di>
+        </button>
 
-        </section>
-        <section class="card" id="country">
-            <div>
-                <h2>São Paulo City-SP, Brazil</h2>
-            </div>
-            <figure>
-                <img id="sao-paulo-mobile" src="images/sao-paulo-mobile.webp" alt="Sao Paulo City Photo">
-                <figcaption>Sao Paulo, SP, Brazil</figcaption>
-            </figure>
-        </section>
-        <section class="card" id="certificate-content">
-            <div>
-                <h2>Web and Computer Programming Certificate</h2>
-            </div>
-            <!--
-            <nav>
-                <a href="#" id="all">All</a>
-                <a href="#" id="cse">CSE</a>
-                <a href="#" id="wdd">WDD</a>
-            </nav>
-            -->
-            <div id="course-filter">
-                <div id="all">All</div>
-                <div id="cse">CSE</div>
-                <div id="wdd">WDD</div>
-            </div>
+        <article class="cards">
+            
 
-            <h3 id="credits">Number of credits: </h3>
+        </article>
+      </main>
 
-            <div id="courseList"></div>
-        </section>
-    </main>
-    <footer>
-        <p><span id="currentyear"></span> - Rafael Pereira de Souza Castro - Brazil <img id="brazil-flag"
-                src="images/br.png" alt="Brazil flag"></p>
-        <p id="lastModified"></p>
-    </footer>
-
-</body>
-
+      <footer>
+        <div class="address">
+          <h3>Vila Calu Chamber of Commerce</h3>
+          <p>Rua Maria do Carmo, 500 - Vila Calu</p>
+          <p>04961-120 - São Paulo - SP - Brazil</p>
+          <p>info@vilacalucc.org</p>
+          <p>+55(11) 5098-4000</p>
+        </div>
+        <div class="social">
+          <a href="https://youtube.com" target="_blank">
+            <img src="images/youtube.png" alt="youtube icon" />
+          </a>
+          <a href="https://twitter.com" target="_blank">
+            <img src="images/x-twitter.png" alt="twitter icon" />
+          </a>
+          <a href="https://linkedin.com" target="_blank">
+            <img src="images/linkedin.png" alt="linkedin icon" />
+          </a>
+        </div>
+        <div class="project-info">
+          <h3>WDD231 Class Project</h3>
+          <p>Rafael Pereira de Souza Castro</p>
+          <p><span id="currentyear"></span> Vila Calu Chamber of Commerce</p>
+          <p id="lastModified"></p>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>

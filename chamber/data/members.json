@@ -1,0 +1,67 @@
+{
+"members": [
+  {
+    "name": "Yrev Store",
+    "address": "Av. José Estima Filho, 321 - Vila Calu, São Paulo - SP, 04960-020",
+    "phone": "(11)94600-8660",
+    "website": "http://www.yrevstore.com.br/",
+    "sector":"clothing store",
+    "image": "images/yrev.webp",
+    "membership_level": "3=gold"
+  },
+  {
+    "name": "Veríssima Modas",
+    "address": "R. da Fortuna, 18 A - Jardim Capela, São Paulo - SP, 04960-210",
+    "phone": "(11)5891-3551",
+    "website": "http://www.verissimamodas.com.br/",
+    "sector":"clothing store",
+    "image": "images/verissima.webp",
+    "membership_level": "2=silver"
+  },
+  {
+    "name": "Restaurante Gula Mania",
+    "address": "Av. José Estima Filho, 608 - Vila Calu, São Paulo - SP, 04960-020",
+    "phone": "(11)94822-5879",
+    "website": "https://www.instagram.com/restaurante_gulamania/",
+    "sector":"food",
+    "image": "images/gulamania.webp",
+    "membership_level": "3=gold"
+  },
+  {
+    "name": "Ayumi Supermercados",
+    "address": "Av. José Estima Filho, 1535 - Vila Calu, São Paulo - SP, 04960-020",
+    "phone": "(11)5098-4000",
+    "website": "http://www.ayumi.com.br/",
+    "sector":"grocery",
+    "image": "images/ayumi.webp",
+    "membership_level": "2=silver"
+  },
+  {
+    "name": "Academia R2",
+    "address": "Av. José Estima Filho, 600 - 2°andar - Vila Calu, São Paulo - SP, 04960-020",
+    "phone": "(11)94960-8212",
+    "website": "https://www.instagram.com/r2.academia/?igshid=3i0w978ebtmy",
+    "sector":"gym",
+    "image": "images/r2.webp",
+    "membership_level": "1=member"
+  },
+  {
+    "name": "Mania Games Informática",
+    "address": "R. das Margaridas Amarelas, 520 - Vila Calu, São Paulo - SP, 04960-020",
+    "phone": "(11)94447-6876",
+    "website": "https://www.instagram.com",
+    "sector":"games, cellphone gadgets",
+    "image": "images/maniagames.webp",
+    "membership_level": "3=gold"
+  },
+  {
+    "name": "Campeão Farma",
+    "address": "Av. José Estima Filho, 97 - Parque Santa Barbara, São Paulo - SP, 04960-020",
+    "phone": "(11) 5098-4000",
+    "website": "https://www.campeaofarma.com.br/",
+    "sector":"drug store",
+    "image": "images/campeaofarma.webp",
+    "membership_level": "2=silver"
+  }
+]
+}
