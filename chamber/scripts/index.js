@@ -82,35 +82,37 @@ const cards = document.querySelector('#cards');
 async function getMemberData() {
   const response = await fetch(members_json);
   const data = await response.json();
-  const spotlight = data.members.filter((member) =>
-    member.membership_level == "2=silver" || member.membership_level == "3=gold"
-  );
-  renderMembers(spotlight);
+
+  renderMembers(data.members);
 }
 
 
 function renderMembers(members) {
 
+  const spotlight = members.filter((member) =>
+    member.membership_level == "2=silver" || member.membership_level == "3=gold"
+  );
+
   let html = "";
 
   for (let i = 0; i <= 2; i++) {
 
-    let random = Math.floor(Math.random() * members.length + i);
+    let random = Math.floor(Math.random() * spotlight.length);
 
     const htmlMember =
       `<div class="card">
     <picture>
-      <img src=${members[random].image} alt=${members[random].name} loading="lazy" width="400" height="250">
+      <img src=${spotlight[random].image} alt=${spotlight[random].name} loading="lazy" width="400" height="250">
     </picture>
-    <h3 id="title">${members[random].name}</h3>
-    <p><span class="label">Address:</span> ${members[random].address}</p>
-    <p><span class="label">Phone:</span> ${members[random].phone}</p>
-    <p><span class="label">Sector:</span> ${members[random].sector}</p>
-    <p><span class="label">Website: <a href= ${members[random].website} target="_blank" title="Website">Website</a></p>
-    <p><span class="label">Membership level:</span> ${members[random].membership_level}</p>
+    <h3 id="title">${spotlight[random].name}</h3>
+    <p><span class="label">Address:</span> ${spotlight[random].address}</p>
+    <p><span class="label">Phone:</span> ${spotlight[random].phone}</p>
+    <p><span class="label">Sector:</span> ${spotlight[random].sector}</p>
+    <p><span class="label">Website: <a href= ${spotlight[random].website} target="_blank" title="Website">Website</a></p>
+    <p><span class="label">Membership level:</span> ${spotlight[random].membership_level}</p>
     </div>`;
 
-    members.splice(random, 1);
+    spotlight.splice(random, 1);
 
     html += htmlMember;
 
