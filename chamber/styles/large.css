@@ -47,6 +47,11 @@
         grid-template-rows: 1fr;
     }
 
+    #planning {
+
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr ; 
+    }
 
 
 }

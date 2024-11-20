@@ -1,22 +1,11 @@
-//MENU ANIMATED TRANSITION LARGE AND SMALL SCREENS
-
-const hamburgerElement = document.querySelector('#myButton');
-const navElement = document.querySelector('#animateme');
-
-hamburgerElement.addEventListener('click', () => {
-    navElement.classList.toggle('open');
-    hamburgerElement.classList.toggle('open');
-
-});
-
 //FETCH READING JSON FILES
-const url = 'data/members.json';
+const members_json = 'data/members.json';
 const cards = document.querySelector('#cards');
 
 async function getMemberData() {
-    const response = await fetch(url);
-    const data = await response.json();
-    renderMembers(data.members);
+  const response = await fetch(members_json);
+  const data = await response.json();
+  renderMembers(data.members);
 }
 
 
@@ -48,14 +37,14 @@ const display = document.querySelector("article");
 // The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
 
 gridbutton.addEventListener("click", () => {
-	// example using arrow function
-	display.classList.add("cards");
-	display.classList.remove("list");
+  // example using arrow function
+  display.classList.add("cards");
+  display.classList.remove("list");
 });
 
 listbutton.addEventListener("click", showList); // example using defined function
 
 function showList() {
-	display.classList.add("list");
-	display.classList.remove("cards");
+  display.classList.add("list");
+  display.classList.remove("cards");
 }

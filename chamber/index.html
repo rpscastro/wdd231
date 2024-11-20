@@ -10,11 +10,11 @@
     />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Vila Calu Chamber of Commerce - Directory</title>
+    <title>Vila Calu Chamber of Commerce - Home Page</title>
     <meta
       name="description"
       content="WDD 231 - Web Frontend Development I - Rafael Castro
-    Vila Calu Chamber of Commerce - Directory"
+    Vila Calu Chamber of Commerce - Home Page"
     />
     <meta name="author" content="Rafael Castro"/>
     <meta
@@ -28,14 +28,14 @@
     />
     <meta
       property="og:url"
-      content="https://rpscastro.github.io/wdd231/chamber/directory.html"
+      content="https://rpscastro.github.io/wdd231/chamber/index.html"
     />
     <link rel="stylesheet" href="styles/normalize.css"/>
     <link rel="stylesheet" href="styles/small.css"/>
     <link rel="stylesheet" href="styles/large.css"/>
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/menutransition.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/index.js" defer></script>
   </head>
 
   <body>
@@ -55,8 +55,8 @@
       </header>
       <nav id="animateme">
         <ul class="menuLinks">
-          <li><a href="index.html" title="Home">Home</a></li>
-          <li class="current-menu-item">
+          <li class="current-menu-item"><a href="index.html" title="Home">Home</a></li>
+          <li>
             <a href="directory.html" title="Directory">Directory</a>
           </li>
           <li><a href="join.html" title="Join">Join</a></li>
@@ -65,14 +65,35 @@
       </nav>
 
       <main>
-        <h1>Directory</h1>
+        <h1>Home</h1>
 
-        <div class="menu">
-          <button id="grid">Grid</button>
-          <button id="list">List</button>
+        <div class="hero">
+            <img src="images/igreja-santa-luzia-hero-bw.webp" loading="lazy" alt="Santa Luzia Church"/>
+            <button class="btn">Join Us</button>
         </div>
+        <div id="planning">
+          <div id="events">
+            <h3>Events</h3>
+            <p><span class="label">Lecture: </span> "Entrepreneurship, Innovation, and Sustainability: Legal Challenges" with João Silva Santos, Monday, Nov 25, 2024, 10 AM</p>
+            <p><span class="label">Event: </span>Highlights of the Year, Monday, Nov 25, 2024, 7 PM</p>
+            <p><span  class="label">Lecture: </span> The Importance of Data in Business - Google Forms, Tuesday, Nov 26, 2024, 6 PM</p>
+          </div>
+          <div id="weather">
+            <h3>Weather</h3>
+            <figure>
+              <img id="weather-icon" src="" alt="">
+              <figcaption></figcaption>
+            </figure>
+            <p>The current temperature in São Paulo-SP, Brazil is <span id="current-temp"></span>.</p>              
+          </div>
+          <div id="forecast">
+          </div>
+        </div>
+        <div>
+          <article class="cards"></article>
 
-        <article class="cards"></article>
+        </div>
+       
       </main>
 
       <footer>

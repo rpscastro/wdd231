@@ -145,6 +145,74 @@ footer .social{
 }
 
 
+.hero{
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+
+    width: 100%;
+    height: auto;
+
+}
+
+/* Style the button and place it in the middle of the container/image */
+.hero .btn {
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #DF061D;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .hero .btn:hover {
+    background-color: black;
+  }
+
+
+#events, #weather, #forecast {
+
+    color: black;
+    background-color: #B6B6BD;
+    text-align: center;
+    margin: 10px;
+    padding-bottom: 20px; 
+    box-shadow: 0 0 10px #333;
+
+}
+
+#events p, #forecast p {
+
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 10px;
+ 
+}
+
+#events h3, #weather h3, #forecast h3 {
+
+    color: white;
+    background-color: #DF061D;
+    margin-bottom: 10px;
+  
+
+}
+
+
+
+
+
+
 /*NAVIGATION STUFF HERE*/
 nav {
 
