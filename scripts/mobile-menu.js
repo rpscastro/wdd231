@@ -89,19 +89,34 @@ hambutton.addEventListener('click', () => {
     hambutton.classList.toggle('show');
 });
 
+//COURSE LIST
+
+const courseList = document.querySelector("#courseList");
+
 function renderCourses(courses) {
+
+    courseList.innerHTML = '';
+
     const html = courses.map((course) => {
+
+        const courseDiv = document.createElement('div');
         if (course.completed) {
-            return `<div class="course-completed">
-                        <h2 class="course-title">${course.subject} ${course.number}</h2>
-                    </div>`;
+            courseDiv.classList.add('course-completed');
         } else {
-            return `<div class="course-uncompleted">
-                        <h2 class="course-title">${course.subject} ${course.number}</h2>
-                    </div>`;
+            courseDiv.classList.add('course-uncompleted');
         }
-    });
-    document.querySelector("#courseList").innerHTML = html.join("");
+
+        const courseH2 = document.createElement('h2');
+        courseH2.classList.add('course-title');
+        courseH2.textContent = `${course.subject} ${course.number}`;
+        courseDiv.appendChild(courseH2);
+        courseDiv.addEventListener("click", () => {
+            displayCourseDetails(course);
+        });
+        courseList.appendChild(courseDiv);
+    }
+    )
+        ;
 }
 
 function sumCredits(courses) {
@@ -115,7 +130,7 @@ let totalCredits = document.querySelector("#credits");
 //Displays all the courses stored in the array.
 document.querySelector("#all").addEventListener("click", function () {
     renderCourses(courses);
-    totalCredits.textContent = `Number of credits: ${sumCredits(courses)}`; 
+    totalCredits.textContent = `Number of credits: ${sumCredits(courses)}`;
 
 });
 
@@ -125,7 +140,7 @@ document.querySelector("#cse").addEventListener("click", function () {
         course.subject == "CSE"
     );
     renderCourses(cseCourses);
-    totalCredits.textContent = `Number of credits: ${sumCredits(cseCourses)}`; 
+    totalCredits.textContent = `Number of credits: ${sumCredits(cseCourses)}`;
 });
 
 //WDD - Displays all the WDD courses stored in the array
@@ -139,3 +154,28 @@ document.querySelector("#wdd").addEventListener("click", function () {
 
 renderCourses(courses);
 totalCredits.textContent = `Number of credits: ${sumCredits(courses)}`;
+
+
+//DISPLAY MODALS
+
+// Store the selected elements that we are going to use. 
+const courseDetails = document.querySelector('#course-details');
+
+function displayCourseDetails(course) {
+
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+
+        <button id="close-button">❌</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits</strong>: ${course.credits}</p>
+        <p><strong>Certificate</strong>: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    `;
+    const closeModal = document.querySelector('#close-button');
+    closeModal.addEventListener("click", () => courseDetails.close());
+
+    courseDetails.showModal();
+}

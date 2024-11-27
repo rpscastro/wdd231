@@ -199,6 +199,7 @@ figure {
     margin: 10px;
     padding: 20px;
     box-shadow: 0 0 10px #333;
+    animation: fade 1s;
 
 }
 
@@ -211,8 +212,50 @@ figure {
     margin: 10px;
     padding: 20px;
     box-shadow: 0 0 10px #333;
+    animation: fade 1s;
 
 }
+
+
+
+@keyframes fade {
+
+    0% {
+
+        opacity: 0;
+    }
+
+    100% {
+
+        opacity: 1;
+    }
+    
+}
+
+
+dialog {
+
+    border: 1px solid rgb(0 0 0 / 0.1);
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+}
+
+::backdrop {
+    background-color: rgb(0 0 0 / 0.5);
+}
+
+dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 1px solid rgb(0 0 0 / 0.1);
+}
+
 
 #brazil-flag {
     width: 40px;
