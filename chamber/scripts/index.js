@@ -1,8 +1,9 @@
 //WEATHER
 // select HTML elements in the document
+const weatherIcon = document.createElement('img');
+const figure = document.querySelector('figure');
 const currentTemp = document.querySelector('#current-temp');
-const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('figcaption');
+const captionDesc = document.createElement('figcaption');
 
 const weatherUrl =
   "https://api.openweathermap.org/data/2.5/weather?lat=-23.56&lon=-46.63&appid=224306604573e3bc0b8418de93f6708d&units=metric";
@@ -31,6 +32,8 @@ function displayResultsWeather(data) {
   weatherIcon.setAttribute('src', iconsrc);
   weatherIcon.setAttribute('alt', desc);
   captionDesc.textContent = `${desc}`;
+  figure.appendChild(weatherIcon);
+  figure.appendChild(captionDesc);
 }
 
 //FORECAST
