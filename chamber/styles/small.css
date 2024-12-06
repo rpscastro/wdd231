@@ -184,6 +184,24 @@ footer .social {
     margin-bottom: 10px;
 }
 
+
+#images .card picture img { 
+        
+   width: 100%;
+   height: auto;
+} 
+
+iframe {
+
+    width: auto;
+    height: 300px;
+    border: 0;
+    margin: 5px;
+ }
+
+
+
+
 /*NAVIGATION STUFF HERE*/
 nav {
     background-color: black;
