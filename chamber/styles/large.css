@@ -28,6 +28,21 @@
     
     
     }
+
+    #images .card picture img { 
+        
+        opacity: 0.7; 
+        transition: opacity 0.3s;
+        transition: transform 0.3s, box-shadow 0.3s;
+    } 
+    
+    #images .card picture img:hover { 
+        
+        opacity: 1.0;
+        transform: scale(1.01); 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
 /*MENU STUFF*/
     #myButton {
 
@@ -51,6 +66,12 @@
 
         display: grid;
         grid-template-columns: 2fr 1fr 1fr ; 
+    }
+
+    #container {
+
+        display: grid;
+        grid-template-columns: 500px 1fr ; 
     }
 
 

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vila Calu Chamber of Commerce - Discover Page</title>
+  <meta name="description"
+    content="WDD 231 - Web Frontend Development I - Rafael Castro Vila Calu Chamber of Commerce - Discover Page" />
+  <meta name="author" content="Rafael Castro" />
+  <meta property="og:title" content="Vila Calu Chamber of Commerce - Discover" />
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://rpscastro.github.io/wdd231/chamber/images/igreja-santa-luzia.webp" />
+  <meta property="og:url" content="https://rpscastro.github.io/wdd231/chamber/index.html" />
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/small.css" />
+  <link rel="stylesheet" href="styles/large.css" />
+  <script src="scripts/getdates.js" defer></script>
+  <script src="scripts/menutransition.js" defer></script>
+  <script src="scripts/discover.js" defer></script>
+</head>
+
+<body>
+  <div id="content">
+    <header>
+      <img src="images/logo.PNG" width="100" height="81" alt="Vila Calu Chamber of Commerce Logo" />
+      <div>
+        <h2>Vila Calu</h2>
+        <h3>Chamber of Commerce</h3>
+      </div>
+      <button id="myButton" title="menu"></button>
+    </header>
+    <nav id="animateme">
+      <ul class="menuLinks">
+        <li>
+          <a href="index.html" title="Home">Home</a>
+        </li>
+        <li><a href="directory.html" title="Directory">Directory</a></li>
+        <li><a href="join.html" title="Join">Join</a></li>
+        <li class="current-menu-item"><a href="discover.html" title="Discover">Discover</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1>Discover</h1>
+      <div id="container">
+        <div id="sidebar-content">
+          <div id="watching">
+            <h3>I am Watching</h3>
+            <p id="watching-message">
+            </p>
+          </div>
+          <div id="about">
+            <h3>About</h3>
+            <p>Vila Calu is a small neighborhood located on the outskirts of the southern zone of the city of São Paulo-SP,
+              very
+              close to the border with the municipality of Itapecerica da Serra. It is part of the M'Boi Mirim
+              subprefecture.
+            </p>
+            <p>
+              Like other neighborhoods on the outskirts of São Paulo, it has a busy local commercial center, schools, a
+              health
+              center, and public transportation services. The main access to the neighborhood is via Estrada do M'Boi Mirim.
+            </p>
+            <p>
+              The region was largely populated by immigrants from the northeast of Brazil and the hinterlands of Minas
+              Gerais, who
+              came to São Paulo to work in the industry in the late 1970s and early 1980s, as a low-cost housing option due
+              to the
+              distance from the city center.
+            </p>
+          </div>
+          <div id="map">
+            <h3>Location</h3>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14609.835949854501!2d-46.7917713!3d-23.73100655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4d715114a9c7%3A0xe65803f9aab1db0f!2sVila%20Calu%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1733501230138!5m2!1spt-BR!2sbr"
+              width="auto" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+    
+          <div id="events">
+            <h3>Events</h3>
+            <p>
+              <span class="label">Lecture: </span> "Entrepreneurship,
+              Innovation, and Sustainability: Legal Challenges" with João Silva
+              Santos, Monday, Nov 25, 2024, 10 AM
+            </p>
+            <p>
+              <span class="label">Event: </span>Highlights of the Year, Monday,
+              Nov 25, 2024, 7 PM
+            </p>
+            <p>
+              <span class="label">Lecture: </span> The Importance of Data in
+              Business - Google Forms, Tuesday, Nov 26, 2024, 6 PM
+            </p>
+          </div>
+          <div id="weather">
+            <h3>Weather</h3>
+            <figure>
+              <img id="weather-icon" src="weather-icon" alt="weather icon" />
+              <figcaption></figcaption>
+            </figure>
+            <p>
+              The current temperature in São Paulo-SP, Brazil is
+              <span id="current-temp"></span>.
+            </p>
+          </div>
+          <div id="forecast"></div>
+        </div>
+        <div id="images">
+          <div class="card">
+            <picture>
+              <img src="images/sao-paulo-3x2.webp" alt="MASP Museum" loading="lazy" width="100%" height="auto">
+            </picture>
+            <h3 id="title">MASP Museum</h3>
+          </div>
+          <div class="card">
+            <picture>
+              <img src="images/lotacaoVilaCalu3x2.webp" alt="Minibus having Vila Calu as destination" loading="lazy"
+                width="100%" height="auto">
+            </picture>
+            <h3 id="title">Minibus having Vila Calu as destination</h3>
+          </div>
+          <div class="card">
+            <picture>
+              <img src="images/campoCalu3x2.webp" alt="Vila Calu community soccer field" loading="lazy" width="100%"
+                height="auto">
+            </picture>
+            <h3 id="title">Vila Calu Soccer Field</h3>
+          </div>
+          <div class="card">
+            <picture>
+              <img src="images/igreja-santa-luzia3x2.webp" alt="Santa Luzia Church" loading="lazy" width="100%"
+                height="auto">
+            </picture>
+            <h3 id="title">Santa Luzia Church</h3>
+          </div>
+          <div class="card">
+            <picture>
+              <img src="images/ubsvilacalu3x2.webp" alt="Vila Calu Health Center" loading="lazy" width="100%" height="auto">
+            </picture>
+            <h3 id="title">Vila Calu Health Center</h3>
+          </div>
+          <div class="card">
+            <picture>
+              <img src="images/samuelmorse3x2.webp" alt="Samuel Morse Public School" loading="lazy" width="100%"
+                height="auto">
+            </picture>
+            <h3 id="title">Samuel Morse Public School</h3>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="address">
+        <h3>Vila Calu Chamber of Commerce</h3>
+        <p>Rua Maria do Carmo, 500 - Vila Calu</p>
+        <p>04961-120 - São Paulo - SP - Brazil</p>
+        <p>info@vilacalucc.org</p>
+        <p>+55(11) 5098-4000</p>
+      </div>
+      <div class="social">
+        <a href="https://youtube.com" target="_blank">
+          <img src="images/youtube.png" loading="lazy" alt="youtube icon" />
+        </a>
+        <a href="https://twitter.com" target="_blank">
+          <img src="images/x-twitter.png" loading="lazy" alt="twitter icon" />
+        </a>
+        <a href="https://linkedin.com" target="_blank">
+          <img src="images/linkedin.png" loading="lazy" alt="linkedin icon" />
+        </a>
+      </div>
+      <div class="project-info">
+        <h3>WDD231 Class Project</h3>
+        <p>Rafael Pereira de Souza Castro</p>
+        <p><span id="currentyear"></span> Vila Calu Chamber of Commerce</p>
+        <p id="lastModified"></p>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
