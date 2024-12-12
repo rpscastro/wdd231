@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Noto+Serif:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #fedf00;
+    color: #184E2C;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 50px auto 44px;
+    align-items: end;
+}
+
+header div {
+    margin-left: 60px;
+}
+
+body {
+    font-family: 'Lato', Helvetica, sans-serif;
+}
+
+main h1 {
+    color: #fedf00;
+    background-color: #184E2C;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 20px;
+    margin-top: 0;
+}
+
+footer {
+    display: grid;
+    background: #fedf00;
+    color: #184E2C;
+    padding: 2rem;
+    text-align: left;
+    font-family: 'Lato', Helvetica, sans-serif;
+}
+
+footer .social img {
+    padding: 5px;
+    height: 50px;
+    width: 50px;
+}
+
+footer div {
+    margin: 10px;
+}
+
+footer .social {
+    text-align: center;
+}
+
+.card {
+    color: black;
+    background-color: #B6B6BD;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px #333;
+}
+
+.card h3 {
+    margin: 10px;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.list .card {
+    display: grid;
+    /* grid-template-columns: 2fr 1fr 1fr; */
+    /* margin: 0;
+    padding: 0.25rem; */
+}
+
+.list .card:nth-child(even) {
+    background-color: white;
+}
+
+.list .card>* {
+    margin: 0 1rem;
+}
+.list .card picture {
+    display: none;
+    /* smaller viewports only */
+}
+
+.menu {
+    justify-content: space-around;
+    font-family: 'Lato', Helvetica, sans-serif;
+    text-align: center;
+}
+
+.menu button {
+    /* display: block; */
+    flex: 1 1 100%;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    width: 75px;
+    height: 35px;
+    font-weight: bold;
+    box-shadow: 0 0 5px #333;
+}
+
+.menu button:hover {
+    background: black;
+    color: white;
+}
+
+.card a {
+    color: navy;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.hero .btn {
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #DF061D;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.hero .btn:hover {
+    background-color: black;
+}
+
+#events,
+#weather,
+#forecast,
+#about,
+#map,
+#watching {
+    color: #002776;
+    background-color: #ffffff;
+    text-align: center;
+    margin: 10px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px #333;
+}
+
+#events p,
+#forecast p,
+#about p,
+#map p,
+#watching p {
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+#events h3,
+#weather h3,
+#forecast h3,
+#about h3,
+#map h3,
+#watching h3 {
+    color: white;
+    background-color: #002776;
+    margin-bottom: 10px;
+}
+
+
+#images .card picture img { 
+        
+   width: 100%;
+   height: auto;
+} 
+
+iframe {
+
+    width: auto;
+    height: 300px;
+    border: 0;
+    margin: 5px;
+ }
+
+
+
+
+/*NAVIGATION STUFF HERE*/
+nav {
+    background-color: #002776;
+}
+
+#myButton::before {
+    content: "\2630";
+}
+
+#myButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #002776;
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    padding: .25rem 2vw;
+}
+
+ul.menuLinks li a {
+    display: block;
+    padding: .75rem 2vw;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #002776;
+}
+
+li.current-menu-item a::before {
+    content: "📍";
+}
+
+ul.menuLinks {
+    list-style-type: none;
+}
+
+/* CSS for the open class */
+#myButton.open::before {
+    content: "x";
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+nav ul {
+    overflow: hidden;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+}
+
+#animateme a:hover {
+    color: #002776;
+    background-color: #ffffff;
+}
+
+/*FORM STUFF*/
+form {
+    margin: 1rem 2%;
+}
+
+form label {
+    display: block;
+    font-size: .8rem;
+    color: black;
+    padding-top: .2rem;
+}
+
+form h3 {
+    font-size: .9rem;
+    margin: 1.5rem 0 .2rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+form input[type=text],
+form input[type=tel],
+form input[type=date],
+form input[type=email],
+form select {
+    display: block;
+    margin: .1rem 0 1rem 0;
+    padding: .3rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    border-left-width: 5px;
+    border-left-color: #555;
+    font-size: 1rem;
+    color: #3D405B;
+    width: 250px;
+}
+
+form input:required {
+    border-left-color: #d70000;
+}
+
+form input:focus {
+    border-left-color: black;
+    outline: none;
+}
+
+form input:required:valid {
+    border-left-color: green;
+}
+
+form input[type=submit] {
+    border: none;
+    text-align: center;
+    background-color: #DF061D;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+form input[type=radio] {
+    margin: 10px;
+    padding: 5px;
+}
+
+form input[type=submit]:hover {
+    background-color: #c31a2b;
+}
+
+form textarea {
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+    white-space: normal;
+    text-align: justify;
+    -moz-text-align-last: center;
+    /* Firefox 12+ */
+    text-align-last: center;
+}
+
+form input:-webkit-autofill {
+    -webkit-text-fill-color: #3D405B;
+}
+
+button {
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#membership-levels {
+    margin: 1rem 2%;
+}
+
+#membership-levels .np {
+    margin: 10px 0px;
+    animation: fade 2s;
+}
+
+#membership-levels .bz {
+    margin: 10px 0px;
+    animation: fade 1.5s;
+}
+
+#membership-levels .sv {
+    margin: 10px 0px;
+    animation: fade 1s;
+}
+
+#membership-levels .gd {
+    margin: 10px 0px;
+    animation: fade 0.5s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#dialogBox {
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px #333;
+    border: none;
+}
+
+#dialogBox div {
+    text-align: left;
+    margin: 10px 10px;
+}
+
+#dialogBox li {
+    margin: 5px 20px;
+}
+
+#dialogBox hr,
+p {
+    margin: 10px 0px;
+}
+
+
+
+
+/***Slide Show***/
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: 'Lato', Helvetica, sans-serif;
+    margin: 0
+}
+
+.mySlides {
+    display: none
+}
+
+
+picture img {
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 0 10px #333;
+}
+
+
+
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: white;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
+
