@@ -115,25 +115,6 @@ label {
     font-weight: bold;
 }
 
-.list .card {
-    display: grid;
-    /* grid-template-columns: 2fr 1fr 1fr; */
-    /* margin: 0;
-    padding: 0.25rem; */
-}
-
-.list .card:nth-child(even) {
-    background-color: white;
-}
-
-.list .card>* {
-    margin: 0 1rem;
-}
-.list .card picture {
-    display: none;
-    /* smaller viewports only */
-}
-
 .menu {
     justify-content: space-around;
     font-family: 'Lato', Helvetica, sans-serif;
@@ -178,34 +159,10 @@ label {
 }
 
 
-/* Style the button and place it in the middle of the container/image */
-.hero .btn {
-    position: absolute;
-    top: 80%;
-    left: 80%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: #DF061D;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 20px 40px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.hero .btn:hover {
-    background-color: black;
-}
-
 #events,
 #weather,
-#forecast,
-#about,
-#map,
-#watching {
+#forecast
+{
     color: #002776;
     background-color: #ffffff;
     text-align: center;
@@ -215,10 +172,7 @@ label {
 }
 
 #events p,
-#forecast p,
-#about p,
-#map p,
-#watching p {
+#forecast p {
     text-align: left;
     padding-left: 20px;
     margin-bottom: 10px;
@@ -226,10 +180,7 @@ label {
 
 #events h3,
 #weather h3,
-#forecast h3,
-#about h3,
-#map h3,
-#watching h3 {
+#forecast h3{
     color: white;
     background-color: #002776;
     margin-bottom: 10px;
@@ -241,16 +192,6 @@ label {
    width: 100%;
    height: auto;
 } 
-
-iframe {
-
-    width: auto;
-    height: 300px;
-    border: 0;
-    margin: 5px;
- }
-
-
 
 
 /*NAVIGATION STUFF HERE*/
@@ -417,42 +358,6 @@ button {
 
 button:hover {
     background-color: #555;
-}
-
-#membership-levels {
-    margin: 1rem 2%;
-}
-
-#membership-levels .np {
-    margin: 10px 0px;
-    animation: fade 2s;
-}
-
-#membership-levels .bz {
-    margin: 10px 0px;
-    animation: fade 1.5s;
-}
-
-#membership-levels .sv {
-    margin: 10px 0px;
-    animation: fade 1s;
-}
-
-#membership-levels .gd {
-    margin: 10px 0px;
-    animation: fade 0.5s;
-}
-
-@keyframes fade {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 0.5;
-    }
-    100% {
-        opacity: 1;
-    }
 }
 
 #dialogBox {

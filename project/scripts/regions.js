@@ -10,32 +10,6 @@ async function getTeamsData() {
   renderTeams(teamsList.teams);
 }
 
-
-
-// function renderTeams(teams) {
-
-//   cards.innerHTML = '';
-
-//   const html = teams.map((team) => {
-
-//     const teamDiv = document.createElement('div');
-//     teamDiv.classList.add('card');
-//     const picture = document.createElement('picture');
-//     const img = document.createElement('img');
-//     img.setAttribute('src', `${team.team_badge}`);
-//     img.setAttribute('alt', `Badge of ${team.name}`);
-//     img.setAttribute('loading', 'lazy');
-//     picture.appendChild(img);
-//     const teamH3 = document.createElement('h3');
-//     teamH3.textContent = `${team.name}`;
-//     teamDiv.appendChild(teamH3);
-//     teamDiv.appendChild(picture);
-//     cards.appendChild(teamDiv);
-//   });
-
-// }
-
-
 function renderTeams(teams) {
   const html = teams.map(
     (team) => `<div class="card team_info">

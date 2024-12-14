@@ -20,9 +20,6 @@ function showNumberOfReviews() {
 
 showNumberOfReviews();
 
-
-
-
 //FORM
 //Grab the entire URL for this page including the attached GET values
 const currentUrl = window.location.href;

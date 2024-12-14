@@ -58,8 +58,5 @@ function displayTeamDetails(team) {
   championDetails.showModal();
 }
 
-
-
-
 getTeamsData();
 
