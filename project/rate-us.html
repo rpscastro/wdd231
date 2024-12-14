@@ -8,11 +8,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Brazilian Soccer Championship 2024 - Regions Page</title>
+  <title>Brazilian Soccer Championship 2024 - Rate Us Page</title>
   <meta name="description"
-    content="WDD 231 - Web Frontend Development I - Rafael Castro Brazilian Soccer Championship 2024 - Regions Page" />
+    content="WDD 231 - Web Frontend Development I - Rafael Castro Brazilian Soccer Championship 2024 - Rate Us Page" />
   <meta name="author" content="Rafael Castro" />
-  <meta property="og:title" content="Brazilian Soccer Championship 2024 - Regions" />
+  <meta property="og:title" content="Brazilian Soccer Championship 2024 - Rate Us" />
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://rpscastro.github.io/wdd231/project/images/brasileirao_cup2.webp" />
   <meta property="og:url" content="https://rpscastro.github.io/wdd231/project/index.html" />
@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="styles/large.css" />
   <script src="scripts/getdates.js" defer></script>
   <script src="scripts/menutransition.js" defer></script>
-  <script src="scripts/regions.js" defer></script>
+  <script src="scripts/rate-us.js" defer></script>
 </head>
 
 <body>
@@ -39,24 +39,49 @@
         <li>
           <a href="index.html" title="Home">Home</a>
         </li>
-        <li class="current-menu-item"><a href="regions.html" title="Regions">Regions</a></li>
+        <li><a href="regions.html" title="Regions">Regions</a></li>
         <li><a href="champions.html" title="Champions Gallery">Champions</a></li>
-        <li><a href="rate-us.html" title="Rate Us">Rate Us</a></li>
+        <li class="current-menu-item"><a href="rate-us.html" title="Rate Us">Rate Us</a></li>
       </ul>
     </nav>
     <main>
-      <h1>Regions</h1>
-      <label for="regions">Choose a Brazilian Region:</label>
-      <select id="region-filter">
-        <option value="all">All</option>
-        <option value="midwest">Midwest</option>
-        <option value="north">North</option>
-        <option value="northeast">Northeast</option>
-        <option value="south">South</option>
-        <option value="southeast">Southeast</option>
-    </select>
-    <article id="cards"></article>
+      <h1>Rate Us</h1>
+      <form method="GET" action="thankyou.html" class="designOne">
+        <h2>Rate Our Site</h2>
+        <label>First Name
+            <input type="text" name="first" required autocomplete="given-name" title="Your First Name" /></label>
+        <label>Last Name
+            <input type="text" name="last" required autocomplete="family-name" title="Your Last Name" /></label>
+        <label>Email
+            <input type="email" name="email" required placeholder="john89@gmail.com" title="Your Email"
+                autocomplete="email" /></label>
+        <label>Cell Phone
+          <input type="tel" name="phone" autocomplete="tel" title="A Phone Number with dashes"
+            placeholder="987-555-1234" /></label>
+        <label>Which team do you support?
+          <select id="select" name="team">
+            <option disabled selected value=''>Choose a team...</option>
+          </select>
+        </label>
+     
+        
+        
+        <label>Written Review
+          <textarea name="description" title="Written Review"></textarea>
+        </label>
+        <h3>Overall Rating *</h3>
+        <label><input id="oneStar" type="radio" name="rating" value="1" required> &star;</label>
+        <label><input id="twoStar" type="radio" name="rating" value="2"> &star; &star;</label>
+        <label><input id="threeStar" type="radio" name="rating" value="3"> &star; &star; &star;</label>
+        <label><input id="fourStar" type="radio" name="rating" value="4"> &star; &star; &star; &star;</label>
+        <label><input id="fiveStar" type="radio" name="rating" value="5"> &star; &star; &star; &star;
+          &star;</label>
 
+        <input type="hidden" id="timestamp" name="timestamp" />
+
+        <input type="submit" value="Post Review" />
+    </form>
+      
     </main>
     <footer>
       <div class="address">
