@@ -56,17 +56,50 @@ footer .social {
 }
 
 .card {
-    color: black;
-    background-color: #B6B6BD;
+    color: #002776;
+    background-color: #ffffff;
     text-align: center;
     margin: 10px;
     padding: 20px;
     box-shadow: 0 0 10px #333;
 }
 
-.card h3 {
+.card h3 p {
     margin: 10px;
 }
+
+select {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    color: #184E2C;
+    margin: 10px;
+}
+
+/* Estilo para o select quando está focado */
+select:focus {
+    border-color: #66afe9;
+    outline: none;
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.6);
+}
+
+/* Estilo para as opções dentro do select */
+option {
+    padding: 10px;
+    background-color: #fff;
+    color: #184E2C;
+}
+
+label {
+
+    margin-left: 15px;
+    color: #184E2C
+}
+
+
 
 .label {
     font-weight: bold;
@@ -451,15 +484,27 @@ body {
 }
 
 
-picture img {
+picture img  {
     vertical-align: middle;
     max-width: 100%;
     height: auto;
-    box-shadow: 0 0 10px #333;
 }
 
+.card picture img  {
+    vertical-align: middle;
+    max-width: 100px;
+    height: auto;
+}
 
+.team_info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
 
+.team_info div {
+    text-align: left;
+}
 
 /* Slideshow container */
 .slideshow-container {

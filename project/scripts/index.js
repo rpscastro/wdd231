@@ -78,55 +78,6 @@ function displayWeekDay(date_txt) {
   return daysOfWeek[dayIndex];
 }
 
-//FETCH READING JSON FILES
-const members_json = 'data/members.json';
-const cards = document.querySelector('#cards');
-
-async function getMemberData() {
-  const response = await fetch(members_json);
-  const data = await response.json();
-
-  renderMembers(data.members);
-}
-
-
-function renderMembers(members) {
-
-  const spotlight = members.filter((member) =>
-    member.membership_level == "2=silver" || member.membership_level == "3=gold"
-  );
-
-  let html = "";
-
-  for (let i = 0; i <= 2; i++) {
-
-    let random = Math.floor(Math.random() * spotlight.length);
-
-    const htmlMember =
-      `<div class="card">
-    <picture>
-      <img src=${spotlight[random].image} alt=${spotlight[random].name} loading="lazy" width="400" height="250">
-    </picture>
-    <h3 id="title">${spotlight[random].name}</h3>
-    <p><span class="label">Address:</span> ${spotlight[random].address}</p>
-    <p><span class="label">Phone:</span> ${spotlight[random].phone}</p>
-    <p><span class="label">Sector:</span> ${spotlight[random].sector}</p>
-    <p><span class="label">Website: <a href= ${spotlight[random].website} target="_blank" title="Website">Website</a></p>
-    <p><span class="label">Membership level:</span> ${spotlight[random].membership_level}</p>
-    </div>`;
-
-    spotlight.splice(random, 1);
-
-    html += htmlMember;
-
-  }
-
-  document.querySelector("article").innerHTML = html;
-}
-
-getMemberData();
-
-
 /*** Slide Show***/
 
 let slideIndex = 1;

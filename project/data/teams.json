@@ -1,0 +1,163 @@
+{ "teams": [
+    {
+        "name": "Botafogo",
+        "region": "Southeast",
+		"state": "Rio de Janeiro",
+        "mascot": "Bira and Biriba Dogs",
+        "championship_titles": [1968, 1995, 2024],
+		"team_badge": "images/botafogo.webp" 	
+    },
+    {
+        "name": "Palmeiras",
+        "region": "Southeast",
+		"state": "São Paulo",
+        "mascot": "Parakeet and Pig",
+        "championship_titles": [1960, 1967, 1967, 1969, 1972, 1973, 1993, 1994, 2016, 2018, 2022, 2023],
+		"team_badge": "images/palmeiras.webp" 	  
+    },
+	{
+        "name": "Flamengo",
+        "region": "Southeast",
+		"state": "Rio de Janeiro",
+        "mascot": "Vulture",
+        "championship_titles": [1980, 1982, 1983, 1992, 2009, 2019, 2020],
+		"team_badge": "images/flamengo.webp" 	  
+    },
+	{
+        "name": "Fortaleza",
+        "region": "Northeast",
+		"state": "Ceará",
+        "mascot": "Lion",
+        "championship_titles": [],
+		"team_badge": "images/fortaleza.webp" 	  
+    },
+	{
+        "name": "Internacional",
+        "region": "South",
+		"state": "Rio Grande do Sul",
+        "mascot": "Saci",
+        "championship_titles": [1975, 1976, 1979],
+		"team_badge": "images/internacional.webp" 	  
+    },
+	{
+        "name": "São Paulo",
+        "region": "Southeast",
+		"state": "São Paulo",
+        "mascot": "Saint Paul",
+        "championship_titles": [1977, 1986, 1991, 2006, 2007, 2008],
+		"team_badge": "images/sao_paulo.webp" 	  
+    },
+	{
+        "name": "Corinthians",
+        "region": "Southeast",
+		"state": "São Paulo",
+        "mascot": "Musketeer",
+        "championship_titles": [1990, 1998, 1999, 2005, 2011, 2015, 2017],
+		"team_badge": "images/corinthians.webp" 	  
+    },
+	{
+        "name": "Bahia",
+        "region": "Northeast",
+		"state": "Bahia",
+        "mascot": "Superman",
+        "championship_titles": [1959, 1988],
+		"team_badge": "images/bahia.webp" 	  
+    },	
+	{
+        "name": "Cruzeiro",
+        "region": "Southeast",
+		"state": "Minas Gerais",
+        "mascot": "Fox",
+        "championship_titles": [1966, 2003, 2013, 2014],
+		"team_badge": "images/cruzeiro.webp" 	  
+    },
+	{
+        "name": "Vasco da Gama",
+        "region": "Southeast",
+		"state": "Rio de Janeiro",
+        "mascot": "Vasco da Gama",
+        "championship_titles": [1974, 1989, 1997, 2000],
+		"team_badge": "images/vasco.webp" 	  
+    },	
+	{
+        "name": "Vitória",
+        "region": "Northeast",
+		"state": "Bahia",
+        "mascot": "Lion",
+        "championship_titles": [],
+		"team_badge": "images/vitoria.webp" 	  
+    },	
+	{
+        "name": "Atlético Mineiro",
+        "region": "Southeast",
+		"state": "Minas Gerais",
+        "mascot": "Rooster",
+        "championship_titles": [1937, 1971, 2021],
+		"team_badge": "images/atletico_mg.webp" 	  
+    },	
+	{
+        "name": "Fluminense",
+        "region": "Southeast",
+		"state": "Rio de Janeiro",
+        "mascot": "Little Warrior",
+        "championship_titles": [1970, 1984, 2010, 2012],
+		"team_badge": "images/fluminense.webp" 	  
+    },	
+	{
+        "name": "Grêmio",
+        "region": "South",
+		"state": "Rio Grande do Sul",
+        "mascot": "Musketeer",
+        "championship_titles": [1981, 1996],
+		"team_badge": "images/gremio.webp" 	  
+    },	
+	{
+        "name": "Juventude",
+        "region": "South",
+		"state": "Rio Grande do Sul",
+        "mascot": "Parakeet",
+	    "championship_titles": [],
+		"team_badge": "images/juventude.webp" 	
+	},	
+	{
+		"name": "Bragantino",
+		"region": "Southeast",
+		"state": "São Paulo",
+		"mascot": "Lion and Crazy Bull",
+		"championship_titles": [],
+		"team_badge": "images/red_bull_bragantino.webp" 	
+	},		
+	{
+		"name": "Athletico Paranaense",
+		"region": "South",
+		"state": "Paraná",
+		"mascot": "Furacão Dog",
+		"championship_titles": [2001],
+		"team_badge": "images/athletico_paranaense.webp" 	
+	},		
+	{
+		"name": "Criciúma",
+		"region": "South",
+		"state": "Santa Catarina",
+		"mascot": "Tigrelino Tiger",
+		"championship_titles": [],
+		"team_badge": "images/criciuma.webp" 	
+	},		
+	{
+		"name": "Atlético Goianiense",
+		"region": "Midwest",
+		"state": "Goiás",
+		"mascot": "Dragon",
+		"championship_titles": [],
+		"team_badge": "images/atletico_goianiense.webp" 	
+	},		
+	{
+		"name": "Cuiabá",
+		"region": "Midwest",
+		"state": "Mato Grosso",
+		"mascot": "Dourado Fish",
+		"championship_titles": [],
+		"team_badge": "images/cuiaba.webp" 	
+	}	
+]
+}
