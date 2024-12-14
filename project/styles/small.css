@@ -158,6 +158,18 @@ label {
     color: #002776;
 }
 
+#thankyou, #attributions {
+
+    margin: 15px;
+}
+
+#attributions ul  {
+
+    margin: 20px;
+}
+
+
+
 
 #events,
 #weather,
